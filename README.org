@@ -1,0 +1,40 @@
+* hue-control.el
+  
+/also known as Huemacs/
+
+Some weird Emacs stuff to control your Hue lights.  Work in progress, patches
+welcome.
+
+This app/whatever does obviously not belong to Philips Lighting.
+
+** Usage
+   
+Load =hue-control.el= however you want.
+
+Before you can control your lights you must authorise yourself with your Hue
+bridge.  To do that, run =M-x hue-control-authorise= once, then push the button
+on your Hue bridge, and finally run that command again.  Once that's done you
+should not need to authorise again, as the username used for authorisation is
+then stored inside a customisation variable.
+
+Now the real fun begins.  Turn on a light:
+
+#+BEGIN_EXAMPLE
+M-x hue-control-light-on
+#+END_EXAMPLE
+
+This will ask you for the ID of the light.  In the Future™ a list with all
+available lights should appear from which you can choose the light to turn on.
+However, since we're living in the Present®, therefore we can't have nice
+things.
+
+Once you've had enough fun with turning on a light, you can easily turn it off
+again:
+
+#+BEGIN_EXAMPLE
+M-x hue-control-light-off
+#+END_EXAMPLE
+
+** Bugs
+
+Yes.  Also, a nice bar in Linz.

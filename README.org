@@ -28,6 +28,12 @@ available lights should appear from which you can choose the light to turn on.
 However, since we're living in the Present®, therefore we can't have nice
 things.
 
+Is the lamp set too bright or too dark?  I've got you covered:
+
+#+BEGIN_EXAMPLE
+M-x hue-control-light-brightness
+#+END_EXAMPLE
+
 Once you've had enough fun with turning on a light, you can easily turn it off
 again:
 

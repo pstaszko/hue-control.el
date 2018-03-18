@@ -75,6 +75,11 @@
   (hue-control-require-auth
    (hue-control-light-set-state light-id :on t)))
 
+(defun hue-control-light-brightness (light-id brightness)
+  (interactive "nLight ID to change the brightness: \nnBrightness value (1-255): ")
+  (hue-control-require-auth
+   (hue-control-light-set-state light-id :brightness brightness)))
+
 (cl-defun hue-control-light-set-state (light-id &key brightness on)
   "Modify the state of the light with the id `light-id'"
   (hue-control-require-auth
